@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragment.OrdersFragment">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/app_color"
+        app:tabSelectedTextColor="#3B271D"
+        app:tabIndicatorColor="@color/app_color">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabactive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:text="Active" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabpastdue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:text="Past Due"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabupcoming"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:layout_height="wrap_content"
+            android:text="Upcoming"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/tabpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_nav"
+        android:layout_below="@id/tablayout"
+        android:layout_marginBottom="0dp">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

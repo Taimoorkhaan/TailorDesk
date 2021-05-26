@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".DrawerActivities.FAQs">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color2"
+        android:padding="@dimen/_8sdp">
+
+        <ImageView
+            android:id="@+id/back_button_faq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/back_arrow" />
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:paddingBottom="8dp"
+            android:text="F.A.Q"
+            android:textAllCaps="true"
+            android:textColor="#EFE0BB"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/_30sdp"
+        android:background="@drawable/bg_expand"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ExpandableListView
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:paddingTop="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_12sdp"
+        android:background="@drawable/bg_faq"
+        android:id="@+id/expandable_View"
+        android:groupIndicator="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

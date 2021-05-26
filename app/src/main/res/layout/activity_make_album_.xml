@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.MakeAlbum_Activity">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color2"
+        android:padding="@dimen/_8sdp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/back_arrow" />
+
+
+        <TextView
+            android:textAllCaps="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:gravity="center"
+            android:text="Albums"
+            android:textColor="#EFE0BB"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/addDesgin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/plus_sign" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_above="@id/saveAlbum"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/albumName"
+        android:padding="@dimen/_12sdp"
+        android:fontFamily="@font/segoe_ui_semibold"
+        android:textColor="@color/app_color2"
+        android:textSize="@dimen/_18ssp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/album_rcv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveAlbum"
+        android:layout_margin="@dimen/_8sdp"
+        android:padding="@dimen/_8sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_bg"
+        android:text="Save Album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+</RelativeLayout>

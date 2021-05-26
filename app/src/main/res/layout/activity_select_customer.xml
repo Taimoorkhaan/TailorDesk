@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SelectCustomer">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:background="#653201">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="17.96dp"
+            android:layout_height="16.95dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28.89dp"
+            android:src="@drawable/ic_icon_ionic_md_arrow_round_backwhite" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:paddingBottom="8dp"
+            android:text="SELECT CUSTOMER"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:textColor="#EFE0BB"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/option_menu"
+            android:src="@drawable/ic_group_3783"
+            android:background="#00000000"
+            android:layout_marginRight="30dp"
+            android:layout_centerVertical="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:background="@drawable/phone_number_background">
+
+    <TextView
+        android:id="@+id/profileCategoryOne_ed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+
+        android:elevation="3dp"
+        android:fontFamily="@font/segoe_ui"
+        android:gravity="start"
+        android:hint="Gents "
+        android:padding="16dp"
+        android:textColor="@color/app_color"
+        android:textColorHint="@color/font_hint_color"
+        android:textSize="@dimen/_10ssp" />
+
+    <LinearLayout
+        android:id="@+id/removecategory"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="remove"
+            android:drawableRight="@drawable/ic_ellipse_516"
+            android:elevation="3dp"
+            android:drawablePadding="@dimen/_8sdp"
+            android:fontFamily="@font/segoe_ui"
+            android:gravity="start"
+            android:hint="Gents "
+            android:padding="16dp"
+            android:textColor="@color/app_color"
+            android:textColorHint="@color/font_hint_color"
+            android:textSize="@dimen/_10ssp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

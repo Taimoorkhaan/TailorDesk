@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.ActiveFragment">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/rcvLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/_16sdp"
+        android:id="@+id/search_layout"
+       android:background="@color/shadowcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.SearchView
+            android:backgroundTint="@color/shadowcolor"
+            android:textColor="@color/black_color"
+            android:textAlignment="center"
+            app:queryHint="Search Items"
+            app:iconifiedByDefault="false"
+            android:id="@+id/searchView"
+            android:textDirection="ltr"
+            android:focusable="false"
+            android:drawableRight="@drawable/ic_baseline_search_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.appcompat.widget.SearchView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="@dimen/_8sdp"
+        android:layout_below="@+id/search_layout"
+        android:id="@+id/tailor_customer_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+        <TextView
+
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            android:id="@+id/noOrdersText"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/app_color2"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_alignParentEnd="true"
+        android:baselineAlignBottom="false"
+        android:backgroundTint="@color/app_color2"
+        android:src="@drawable/ic_baseline_add_24"
+        android:id="@+id/add_floatingBtn"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginVertical="@dimen/_16sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>

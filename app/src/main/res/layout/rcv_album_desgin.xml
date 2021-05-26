@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="@dimen/_12sdp"
+    android:background="@drawable/albumshape"
+    android:padding="@dimen/_8sdp"
+    android:layout_margin="@dimen/_8sdp"
+    android:id="@+id/mainHook"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@drawable/albumshape"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/mainhook"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:src="@drawable/personimage"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"></ImageView>
+
+        <ImageView
+            android:visibility="visible"
+            android:layout_centerInParent="true"
+            android:id="@+id/addAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_group_3792" />
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Edit Item"
+        android:id="@+id/edit_item"/>
+
+    <item android:title="Change Status"
+        android:id="@+id/change_item"/>
+
+    <item android:title="Task Status"
+        android:id="@+id/task_status"/>
+
+    <item android:title="Delete"
+        android:id="@+id/delete_item"/>
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.Server_Selection_Activity">
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/liveServer"
+            android:text="Live Server"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Button>
+        <Button
+            android:id="@+id/waleedServer"
+            android:text="Local Aqib Server"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Button>
+
+        <Button
+            android:id="@+id/suhabServer"
+            android:text="Local Suhab B Server"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Button>
+        <Button
+            android:id="@+id/UNKNOWNServer"
+            android:text="Local Raiz Server"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Button>
+    </LinearLayout>
+</RelativeLayout>

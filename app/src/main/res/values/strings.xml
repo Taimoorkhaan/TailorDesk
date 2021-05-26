@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Tailor Desk</string>
+    <string name="hello_blank_fragment">hello</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string-array name="Order_Report">
+        <item>Today Report</item>
+        <item>Daily</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+    <string-array name="Genders">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="Member">
+        <item>Select Relation</item>
+        <item>Father</item>
+        <item>Brother</item>
+        <item>Uncle</item>
+        <item>Friend</item>
+    </string-array>
+
+
+    <string-array name="Pockets">
+        <item> Select No Of Pockets</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+
+    <string-array name="Collar">
+        <item> Select Collar Type</item>
+        <item>Straight Collar</item>
+        <item>Windsor Spread Collar</item>
+        <item>Buttondown Collar</item>
+        <item>Club Collar</item>
+        <item>Band Collar</item>
+    </string-array>
+
+    <string-array name="pleats">
+        <item> Select Skirt</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="email">
+        <item>  Email  </item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="daily">
+        <item>  Daily  </item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="our_team_will_contact_you_for_regarding_your_upgrade_thanks">Our Team will contact you for regarding your upgrade Thanks</string>
+</resources>

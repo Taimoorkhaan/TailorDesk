@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.SetupDetail01">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ic_path_4984">
+
+            <ImageView
+                android:layout_marginVertical="@dimen/_12sdp"
+                android:paddingVertical="@dimen/_12sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/tailor_app_logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_14sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#3B271D"
+                android:paddingBottom="@dimen/_6sdp"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="STEP 01 OF 03"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:background="@drawable/setup_detail_background"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_12sdp"
+                    android:src="@drawable/ic_rectangle_30" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text="Person Name"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:textColor="#3B271D"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:singleLine="true"
+                android:maxLines="1"
+                android:id="@+id/owner_name"
+                android:layout_marginHorizontal="@dimen/_3sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/phone_number_background"
+                android:elevation="@dimen/_5sdp"
+                android:hint="Shop Owner Name"
+                android:padding="@dimen/_8sdp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text="Shop Name"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:textColor="#3B271D"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:id="@+id/owner_shop_name"
+                android:layout_marginHorizontal="@dimen/_3sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/phone_number_background"
+                android:elevation="@dimen/_5sdp"
+                android:hint="Your Shop Name"
+                android:padding="@dimen/_8sdp"
+                android:paddingLeft="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Phone Number"
+                android:textColor="#3B271D"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+            <EditText
+                android:inputType="number"
+                android:digits="0123456789"
+                android:id="@+id/owner_phone_number"
+                android:layout_marginHorizontal="@dimen/_3sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/phone_number_background"
+                android:elevation="5dp"
+                android:hint="3048492404"
+                android:padding="8dp"
+                android:paddingLeft="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Email (optional)"
+                android:textColor="#3B271D"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:textStyle="bold" />
+
+            <EditText
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="textWebEmailAddress"
+                android:id="@+id/owner_email"
+                android:layout_marginHorizontal="@dimen/_3sdp"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/phone_number_background"
+                android:elevation="5dp"
+                android:hint="Your Email"
+                android:padding="8dp"
+                android:paddingLeft="18dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <Button
+               android:layout_centerVertical="true"
+               android:id="@+id/next_btn"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="16dp"
+               android:layout_marginRight="16dp"
+               android:background="@drawable/setup_detail_next_button"
+               android:text="NEXT"
+               android:fontFamily="@font/segoe_ui_semibold"
+               android:textColor="#FFFFFF"
+               android:textSize="18dp" />
+
+       </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

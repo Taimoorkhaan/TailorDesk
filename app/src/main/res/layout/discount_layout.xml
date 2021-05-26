@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="@dimen/_12sdp"
+    android:layout_margin="@dimen/_8sdp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:padding="@dimen/_12sdp"
+        android:inputType="number"
+        android:id="@+id/add_amount_discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_12sdp"
+        android:hint="Enter Discount Amount"
+        android:textColor="#653201"
+        android:textSize="@dimen/_14ssp"
+        android:background="@drawable/edit_shape"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:padding="@dimen/_8sdp"
+            android:layout_weight="1"
+            android:id="@+id/addbtnDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="add"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:textColor="#EFE0BB"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/add_item_button"/>
+
+        <Button
+            android:padding="@dimen/_8sdp"
+            android:layout_weight="1"
+            android:id="@+id/cancelbtnDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:textColor="#EFE0BB"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/add_item_button"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="10"
+    tools:context=".Activities.SetupDetail01">
+
+    <LinearLayout
+        android:layout_weight="8"
+        android:id="@+id/lyt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ic_path_4984">
+            <ImageView
+                android:layout_marginVertical="@dimen/_12sdp"
+                android:paddingVertical="@dimen/_12sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/tailor_app_logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp">
+
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <ImageButton
+                    android:id="@+id/back_button"
+                    android:layout_width="15dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/ic_icon_ionic_md_arrow_round_back" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="STEP 02 OF 03"
+                    android:fontFamily="@font/segoe_ui_semibold"
+                    android:textColor="#3B271D"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/setup_detail_background"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="240dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/ic_rectangle_31" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:text="Select Category"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:textColor="#3B271D"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:padding="12sp"
+                android:visibility="visible"
+                android:layout_margin="3dp"
+                android:background="@drawable/phone_number_background"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:elevation="5dp"
+                >
+
+                <EditText
+                    android:maxLines="1"
+                    android:padding="4dp"
+                    android:drawableRight="@drawable/ic_baseline_youtube_searched_for_24"
+                    android:id="@+id/serachcategory"
+                    android:background="#00F0F8FF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Search Category" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/catView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:visibility="visible"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00F0F8FF" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/setup_detail_next_button"
+        android:text="NEXT"
+        android:fontFamily="@font/segoe_ui_semibold"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+    </LinearLayout>
+
+</LinearLayout>

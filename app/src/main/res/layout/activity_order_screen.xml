@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@null"
+        android:background="#653201">
+        <RelativeLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/drawerIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_union_3" />
+
+            <ImageView
+                android:id="@+id/toolBarImg"
+                android:src="@drawable/tailor_app_logo"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_50sdp">
+            </ImageView>
+            <TextView
+                android:textAllCaps="true"
+                android:id="@+id/toolBarText"
+                android:visibility="gone"
+                android:textColor="@color/shadowcolor"
+                android:textSize="@dimen/_16ssp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerMain"
+        tools:openDrawer="start"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+
+            android:id="@+id/MainHook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_drawer"
+        android:background="@drawable/gradient_color"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:itemTextColor="@color/white"
+        >
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:padding="@dimen/_12sdp"
+                android:layout_weight="2.5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    app:civ_circle_background_color="@color/white"
+                    android:src="@drawable/personimage"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp">
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/segoe_ui"
+                    android:padding="@dimen/_4sdp"
+                    android:id="@+id/headerName"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/app_name"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="6.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:paddingLeft="@dimen/_12sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/drawerRcv">
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+
+                <ImageView
+                    android:layout_margin="@dimen/_4sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/drawer_youtube"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ImageView>
+                <ImageView
+                    android:layout_margin="@dimen/_4sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/drawer_fb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ImageView>
+                <ImageView
+                    android:layout_margin="@dimen/_4sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/drawer_instagram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ImageView>
+                <ImageView
+                    android:layout_margin="@dimen/_4sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/drawer_print"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ImageView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        app:labelVisibilityMode="labeled"
+        app:itemTextColor="@color/bottom_color"
+        app:itemIconTint="@color/bottom_color"
+        app:menu="@menu/bottom_items">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

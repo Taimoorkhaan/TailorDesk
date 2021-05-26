@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/add_new_conatct"
+    android:title="Add New Contact"
+    />
+    <item android:title="Select a Phone Contact"
+        android:id="@+id/select_phone_contact"/>
+</menu>

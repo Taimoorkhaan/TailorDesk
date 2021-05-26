@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.ActiveFragment">
+
+    <LinearLayout
+        android:id="@+id/pastRcvLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/_16sdp"
+        android:id="@+id/search_layout"
+        android:background="@color/shadowcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.SearchView
+            android:backgroundTint="@color/shadowcolor"
+            android:textColor="@color/black_color"
+            android:textAlignment="center"
+            app:queryHint="Search Items"
+            app:iconifiedByDefault="false"
+            android:id="@+id/searchView"
+            android:textDirection="ltr"
+            android:drawableRight="@drawable/ic_baseline_search_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.appcompat.widget.SearchView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="@dimen/_8sdp"
+        android:layout_below="@+id/search_layout"
+        android:id="@+id/tailor_customer_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+    <TextView
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/app_color2"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/pastLayoutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+
+</RelativeLayout>

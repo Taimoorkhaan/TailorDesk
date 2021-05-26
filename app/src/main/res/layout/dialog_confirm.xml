@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="@dimen/_40sdp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_3sdp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_15sdp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cnf_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="@dimen/_41sdp"
+                android:layout_marginEnd="14dp"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:gravity="center"
+                android:text="Please confirm you are choosing premium package for upgrade"
+                android:textColor="#646464"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:id="@+id/confirm_Package"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cnf_title"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_36sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:gravity="center"
+                android:text="Confirm"
+                android:textColor="#000000"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:id="@+id/package_Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cnf_title"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_29sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:background="@drawable/cancel_shape"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:paddingVertical="@dimen/_6sdp"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="#C7934E"
+                android:textSize="@dimen/_16ssp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

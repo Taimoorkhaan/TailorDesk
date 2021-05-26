@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+ <CheckBox
+    android:textColor="@color/black_color"
+    android:theme="@style/checkBoxStyle"
+    android:id="@+id/catName"
+     android:layout_margin="4dp"
+    android:padding="8dp"
+    android:button="@null"
+    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+    android:text="Virtual"
+     android:fontFamily="@font/segoe_ui_semibold"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+</CheckBox>
+</LinearLayout>

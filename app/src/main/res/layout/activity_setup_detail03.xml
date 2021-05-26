@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.SetupDetail01">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested"
+
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/upperLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ic_path_4984">
+            <ImageView
+                android:layout_marginVertical="@dimen/_12sdp"
+                android:paddingVertical="@dimen/_12sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/tailor_app_logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp">
+
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/secondLayout"
+            android:layout_below="@+id/upperLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_18sdp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageButton
+                    android:id="@+id/back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/ic_icon_ionic_md_arrow_round_back" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:paddingBottom="8dp"
+                    android:fontFamily="@font/segoe_ui_semibold"
+                    android:text="STEP 03 OF 03"
+                    android:textColor="#3B271D"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginHorizontal="@dimen/_2sdp"
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:background="@drawable/setup_detail_background"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp"
+                    android:src="@drawable/ic_rectangle_32" />
+            </LinearLayout>
+
+            <TextView
+                android:paddingLeft="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:text="Address"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:textColor="#3B271D"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:singleLine="true"
+                android:maxLines="1"
+                android:id="@+id/country"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/phone_number_background"
+                android:elevation="5dp"
+                android:text="Pakistan"
+                android:padding="16dp"
+                />
+
+
+
+            <TextView
+                android:text="Lahore"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_marginTop="16dp"
+                android:id="@+id/city"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/phone_number_background"
+                android:elevation="5dp"
+                android:hint="CITY"
+                android:padding="16dp"
+                 />
+
+
+
+            <EditText
+                android:layout_marginTop="16dp"
+                android:id="@+id/area"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/phone_number_background"
+                android:elevation="5dp"
+                android:hint="Shop Number,Road Name, Area"
+                android:padding="16dp"
+                 />
+
+            <TextView
+                android:paddingLeft="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Pin Location"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:textColor="#3B271D"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_margin="3dp"
+                android:background="@drawable/phone_number_background"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:elevation="5dp"
+                >
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/map_text"
+                    android:background="#00F0F8FF"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="90"
+                    android:hint="Map Location" />
+
+                <ImageButton
+                    android:background="#00000000"
+                    android:id="@+id/map_btn"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_2948253" />
+
+            </LinearLayout>
+
+            <TextView
+                android:paddingLeft="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:text="Add Logo (optional)"
+                android:textColor="#3B271D"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:padding="@dimen/_8sdp"
+                android:layout_marginBottom="5dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/phone_number_background"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:elevation="5dp"
+                >
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/logo_text"
+                    android:background="#00F0F8FF"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="90"
+                    android:hint="Upload Logo" />
+
+                <ImageButton
+                    android:background="#00000000"
+                    android:id="@+id/logo_btn"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_solid" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lastLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:id="@+id/finish_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:background="@drawable/setup_detail_next_button"
+                android:text="FINISH"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

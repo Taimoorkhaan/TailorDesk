@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#653201"
+        android:padding="@dimen/_4sdp">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28.89dp"
+            android:background="#00000000"
+            android:src="@drawable/ic_icon_ionic_md_arrow_round_backwhite" />
+
+        <TextView
+            android:textAllCaps="true"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:paddingBottom="8dp"
+            android:text="Edit Item"
+            android:textColor="#EFE0BB"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:paddingTop="40dp"
+                android:paddingBottom="8dp"
+                android:text=" Basic Detail"
+                android:textColor="#653201"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/serviceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/phone_number_background"
+                android:elevation="3dp"
+                android:hint="Paint 01"
+                android:lines="1"
+                android:padding="8dp"
+                android:paddingLeft="18dp"
+                android:textColorHint="#3B271D" />
+            <RadioGroup
+                android:visibility="gone"
+                android:dividerPadding="@dimen/_8sdp"
+
+                android:id="@+id/stitichingMode"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:layout_marginHorizontal="@dimen/_4sdp"
+                    android:button="@drawable/selector_radio"
+                    android:background="@drawable/phone_number_background"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:id="@+id/newStitching"
+                    android:text="@string/app_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:layout_marginHorizontal="@dimen/_4sdp"
+                    android:button="@drawable/selector_radio"
+                    android:background="@drawable/phone_number_background"
+                    android:padding="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:id="@+id/AlternationBtn"
+                    android:text="@string/app_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                </RadioButton>
+            </RadioGroup>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="@dimen/_4sdp"
+                    android:background="@drawable/phone_number_background"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+
+                        android:backgroundTint="@color/app_color"
+                        android:id="@+id/newStitching2"
+                        android:paddingHorizontal="@dimen/_4sdp"
+                        android:layoutDirection="rtl"
+                        android:textAlignment="textStart"
+                        android:layout_gravity="start"
+                        android:button="@drawable/selector_radio"
+                        android:text="New Stitching"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </RadioButton>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_gravity="start"
+                    android:padding="@dimen/_4sdp"
+                    android:background="@drawable/phone_number_background"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:checked="false"
+                        android:backgroundTint="@color/app_color"
+                        android:id="@+id/AlternationBtn2"
+                        android:paddingHorizontal="@dimen/_4sdp"
+                        android:layoutDirection="rtl"
+                        android:textAlignment="textStart"
+                        android:layout_gravity="start"
+                        android:button="@drawable/selector_radio"
+                        android:text="Alternation"
+                        android:background="@null"
+                        android:textDirection="ltr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </RadioButton>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--   <RadioGroup
+                   android:background="@drawable/phone_number_background"
+                   android:id="@+id/stitichingMode"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="15dp"
+                   android:orientation="horizontal">
+
+
+                   <RadioButton
+                       android:id="@+id/newStitching"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginRight="20dp"
+                       android:layout_weight="1"
+                       android:button="@drawable/selector_radio"
+                       android:checked="true"
+                       android:elevation="3dp"
+                       android:fontFamily="@font/segoe_ui"
+                       android:layoutDirection="rtl"
+                       android:paddingLeft="20dp"
+                       android:text="New Stitching"
+                       android:textColor="#3B271D"
+                       android:textDirection="ltr" />
+
+
+                   <RadioButton
+                       android:id="@+id/AlternationBtn"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:button="@drawable/selector_radio"
+                       android:elevation="3dp"
+                       android:fontFamily="@font/segoe_ui"
+                       android:layoutDirection="rtl"
+                       android:paddingLeft="20dp"
+                       android:text="Alteration"
+                       android:textColor="#3B271D" />
+
+
+               </RadioGroup>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Pricing &amp; Delivery Date"
+                android:textColor="#653201"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/cost"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/phone_number_background"
+                android:elevation="3dp"
+                android:fontFamily="@font/segoe_ui"
+                android:hint="Price (PKR) "
+                android:inputType="number"
+                android:lines="1"
+                android:padding="15dp"
+                android:paddingLeft="18dp"
+                android:textColorHint="#3B271D"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/phone_number_background"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/delivery_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:background="#00F0F8FF"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:fontFamily="@font/segoe_ui"
+                    android:gravity="start"
+                    android:hint="Delivery Date"
+                    android:padding="15dp"
+                    android:textColorHint="#3B271D"
+                    android:textSize="14sp" />
+
+                <ImageView
+
+                    android:clickable="false"
+                    android:id="@+id/deliveryDateIcon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:background="#00000000"
+                    android:src="@drawable/ic_baseline_calendar_today_24" />
+            </LinearLayout>
+
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="50dp"
+                 android:layout_marginTop="8dp"
+                 android:layout_marginLeft="3dp"
+                 android:layout_marginRight="3dp"
+                 android:layout_marginBottom="3dp"
+                 android:background="@drawable/phone_number_background"
+                 android:elevation="3dp"
+                 android:gravity="center"
+                 android:orientation="horizontal"
+                 android:weightSum="100">
+
+                 <EditText
+                     android:id="@+id/trial_date"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="90"
+                     android:background="#00F0F8FF"
+                     android:clickable="true"
+                     android:focusable="false"
+                     android:hint="Trial Date" />
+
+                 <ImageView
+                     android:layout_width="22dp"
+                     android:layout_height="22dp"
+                     android:background="#00000000"
+                     android:src="@drawable/ic_baseline_calendar_today_24" />
+             </LinearLayout>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Other Detail"
+                android:textColor="#653201"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="@dimen/_4sdp"
+                    android:background="@drawable/phone_number_background"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+
+                        android:backgroundTint="@color/app_color"
+                        android:id="@+id/straightPocketBtn2"
+                        android:paddingHorizontal="@dimen/_4sdp"
+                        android:layoutDirection="rtl"
+                        android:textAlignment="textStart"
+                        android:layout_gravity="start"
+                        android:button="@drawable/selector_radio"
+                        android:text="Cross Pocket"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </RadioButton>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_gravity="start"
+                    android:padding="@dimen/_4sdp"
+                    android:background="@drawable/phone_number_background"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:checked="false"
+                        android:backgroundTint="@color/app_color"
+                        android:id="@+id/crossPockectBtn2"
+                        android:paddingHorizontal="@dimen/_4sdp"
+                        android:layoutDirection="rtl"
+                        android:textAlignment="textStart"
+                        android:layout_gravity="start"
+                        android:button="@drawable/selector_radio"
+                        android:text="Straight Pockets"
+                        android:background="@null"
+                        android:textDirection="ltr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </RadioButton>
+                </LinearLayout>
+            </LinearLayout>
+            <!--   <RadioGroup
+                   android:id="@+id/pocketMode"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:layout_marginTop="10dp"
+                   android:layoutDirection="rtl"
+                   android:orientation="horizontal"
+                   android:textDirection="ltr"
+                   android:weightSum="2">
+
+
+                   <RadioButton
+                       android:id="@+id/straightPocketBtn"
+                       android:layout_width="0dp"
+                       android:layout_height="50dp"
+                       android:layout_weight="1"
+                       android:background="@drawable/phone_number_background"
+                       android:button="@drawable/selector_radio"
+                       android:elevation="3dp"
+                       android:fontFamily="@font/segoe_ui"
+                       android:paddingLeft="20dp"
+                       android:text="Straight Pockets"
+                       android:textColor="#3B271D" />
+
+                   <RadioButton
+                       android:layoutDirection="rtl"
+                       android:textAlignment="textStart"
+                       android:layout_gravity="start"
+                       android:id="@+id/crossPockectBtn"
+                       android:layout_width="0dp"
+                       android:layout_height="50dp"
+                       android:layout_marginRight="20dp"
+                       android:layout_weight="1"
+                       android:background="@drawable/phone_number_background"
+                       android:button="@drawable/selector_radio"
+                       android:checked="true"
+                       android:elevation="3dp"
+                       android:fontFamily="@font/segoe_ui"
+                       android:text="Cross Pocket"
+                       android:textColor="#3B271D" />
+
+
+               </RadioGroup>
+   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:elevation="3dp"
+                android:background="@drawable/phone_number_background"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/number_of_pocket_spinner"
+                    style="@style/SpinnerTheme2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="8dp"
+                    android:padding="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginBottom="3dp"
+
+                    android:entries="@array/Pockets" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:elevation="3dp"
+                android:background="@drawable/phone_number_background"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/select_pleats"
+                    style="@style/SpinnerTheme2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:padding="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:entries="@array/pleats" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Measurement"
+                android:textColor="#653201"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/phone_number_background"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/pant_measurement"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="90"
+                    android:background="#00F0F8FF"
+                    android:fontFamily="@font/segoe_ui"
+                    android:hint="Add Pant Measurement"
+                    android:paddingTop="15dp"
+                    android:textColorHint="#3B271D" />
+
+                <ImageButton
+                    android:id="@+id/add_btn"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/ic_ellipse_516"
+                    android:src="@drawable/ic_path_4988" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00F0F8FF" />
+
+                </ScrollView>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Special Instructions"
+                android:textColor="#653201"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/stitichingDetails"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/phone_number_background"
+                android:elevation="3dp"
+                android:fontFamily="@font/segoe_ui"
+                android:gravity="start"
+                android:hint="Add Measurement "
+                android:padding="8dp"
+                android:paddingLeft="18dp"
+                android:textColorHint="#3B271D" />
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/segoe_ui_semibold"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="Record Instruction Audio"
+                    android:textColor="#3B271D"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/audio_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_baseline_mic_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/segoe_ui_semibold"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="Mark As Urgent"
+                    android:textColor="#3B271D"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/markUrgent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:thumb="@drawable/thumb_custom_order"
+                    app:track="@drawable/track_custom_order" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Cloth Images"
+                android:textColor="#653201"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/add_customer_image"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/clothImage1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            >
+
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/clothImage1Remove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_ellipse_516"
+                            android:visibility="gone"
+                           />
+
+                        <ImageButton
+                            android:id="@+id/clothImage1Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="#00000000"
+                            android:src="@drawable/ic_group_3792" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/segoe_ui_semibold"
+                        android:text="Cloth 01"
+                        android:textColor="#3B271D"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/add_customer_image"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/clothImage2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            >
+
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/clothImage2Remove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_ellipse_516"
+                            android:visibility="gone"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/clothImage2Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="#00000000"
+                            android:src="@drawable/ic_group_3792" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/segoe_ui_semibold"
+                        android:text="Cloth 02"
+                        android:textColor="#3B271D"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Pattern Images"
+                android:textColor="#653201"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/add_customer_image"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/patternImage1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone">
+
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/patternImage1Remove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_ellipse_516"
+                            android:visibility="gone">
+
+                        </ImageView>
+
+                        <ImageButton
+                            android:id="@+id/patternImage1button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="#00000000"
+                            android:src="@drawable/ic_group_3792" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/segoe_ui_semibold"
+                        android:text="Pattern 01"
+                        android:textColor="#3B271D"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/add_customer_image"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/patternImage2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                           >
+                        </ImageView>
+
+
+                        <ImageView
+                            android:id="@+id/patternImage2Remove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_ellipse_516"
+                            android:visibility="gone"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/patternImage2button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="#00000000"
+                            android:src="@drawable/ic_group_3792" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/segoe_ui_semibold"
+                        android:text="Pattern 02"
+                        android:textColor="#3B271D"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/finish_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/setup_detail_next_button"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:text="Save item"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/MeasurementLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_12sdp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Basic Detail"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/_18ssp"></TextView>
+
+        <TextView
+            android:id="@+id/serviceName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/phone_number_background"
+            android:padding="@dimen/_8sdp"
+            android:text="Service Name">
+
+        </TextView>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Measurement (inches)"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/_18ssp">
+
+        </TextView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_Measurement"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EFE0BB"
+            android:paddingTop="@dimen/_8sdp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

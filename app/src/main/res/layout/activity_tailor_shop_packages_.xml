@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color2"
+        android:padding="@dimen/_8sdp">
+
+        <ImageView
+            android:id="@+id/back_button_Packages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/back_arrow" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:gravity="center"
+            android:padding="@dimen/_4sdp"
+            android:text="Packages"
+            android:textAllCaps="true"
+            android:textColor="#EFE0BB"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/segui_semi_bold"
+        android:text="Choose the right Plan for you"
+        android:textColor="#646464"
+        android:textSize="@dimen/_13sdp" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/monthly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/segui_semi_bold"
+            android:text="Monthly"
+            android:textColor="#653201"
+            android:textSize="@dimen/_11ssp" />
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/monthly"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_compat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumb="@drawable/switch_thumb"
+                app:track="@drawable/switch_track" />
+            <!-- app:showText="true"
+             android:textOff="off"
+             android:textOn="on"-->
+
+
+        </RelativeLayout>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/layout"
+            android:fontFamily="@font/segui_semi_bold"
+            android:text="Year"
+            android:textColor="#646464"
+            android:textSize="@dimen/_11ssp" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear_layout"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

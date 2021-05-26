@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+
+        android:padding="@dimen/_8sdp"
+        android:textSize="@dimen/_14ssp"
+        android:text="@string/app_name"
+        android:textColor="@color/app_color2"
+        android:fontFamily="@font/segoe_ui_semibold"
+        android:id="@+id/customerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <View
+        android:layout_marginTop="@dimen/_6sdp"
+        android:background="@color/app_color"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    android:paddingTop="@dimen/_1sdp"
+    android:paddingBottom="@dimen/_1sdp"
+    android:layout_marginVertical="@dimen/_2sdp"
+    android:weightSum="2"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+        <TextView
+            android:maxLines="1"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:id="@+id/serviceName"
+            android:padding="@dimen/_14sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/app_color2"
+            android:text="Service Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+        </TextView>
+
+
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/_8sdp"
+        android:padding="@dimen/_4sdp"
+        android:background="@color/white"
+        android:layout_gravity="end"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="@dimen/_14ssp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:paddingLeft="@dimen/_12sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:inputType="number"
+            android:maxLength="5"
+            android:singleLine="true"
+            android:id="@+id/pant_measurementNo"
+            android:background="@drawable/spinner_bg_shape"
+            android:hint="100"
+          android:layout_gravity="center"
+            android:fontFamily="@font/segoe_ui"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/serviceImage"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:src="@drawable/personimage"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_50sdp">
+
+        </ImageView>
+
+    </LinearLayout>
+
+</LinearLayout>

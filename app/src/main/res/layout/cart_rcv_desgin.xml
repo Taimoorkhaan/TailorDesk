@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/orderNo"
+        android:paddingLeft="@dimen/_18sdp"
+        android:textColor="@color/app_color"
+        android:textSize="18dp"
+        android:fontFamily="@font/segoe_ui_semibold"
+        android:text="OrderNO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <LinearLayout
+        android:elevation="@dimen/_4sdp"
+        android:background="@drawable/phone_number_background"
+        android:layout_margin="@dimen/_6sdp"
+        android:padding="@dimen/_14ssp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/orderText"
+            android:textSize="@dimen/_14ssp"
+            android:gravity="start"
+            android:text="Service Name"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:id="@+id/editOrder"
+            android:textSize="@dimen/_14ssp"
+            android:gravity="end"
+            android:textColor="@color/app_color"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:text="Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

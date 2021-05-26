@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_marginTop="@dimen/_1sdp"
+        android:id="@+id/btnStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/segoe_ui_semibold"
+        android:text="Pending"
+        android:textAllCaps="false"
+        android:textColor="#3B271D"
+        android:textColorHint="#000000"
+        android:textSize="@dimen/_14ssp"/>
+
+</LinearLayout>

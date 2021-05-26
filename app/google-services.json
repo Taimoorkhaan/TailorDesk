@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "273056384244",
+    "firebase_url": "https://tailor-desk.firebaseio.com",
+    "project_id": "tailor-desk",
+    "storage_bucket": "tailor-desk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273056384244:android:0ec91ae724e73362624aa1",
+        "android_client_info": {
+          "package_name": "com.digiconvalley.tailordesk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273056384244-alacaa63kjv5cmbfa1vj6ndo0963qm7s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.digiconvalley.tailordesk",
+            "certificate_hash": "43dd99301df413b7e575478b8711f9090b598443"
+          }
+        },
+        {
+          "client_id": "273056384244-mnbonurth63hug54fgols4hn6617e64c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.digiconvalley.tailordesk",
+            "certificate_hash": "a1c40d2e8408ade1e0f28dd94418f160a7f8e3da"
+          }
+        },
+        {
+          "client_id": "273056384244-uc1j2i1baks9jns3e9b299v4j3n6d0ha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4LVKlRNZe7dyE21pwSzW4Gf-EFs2OJNc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273056384244-uc1j2i1baks9jns3e9b299v4j3n6d0ha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

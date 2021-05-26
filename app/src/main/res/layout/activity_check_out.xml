@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.CheckOutActivity">
+
+    <RelativeLayout
+        android:padding="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color2">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="17.96dp"
+            android:layout_height="16.95dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28.89dp"
+            android:src="@drawable/ic_icon_arrow_round_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:paddingBottom="8dp"
+            android:text="Order #"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:textColor="#EFE0BB"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/cartText"
+        android:padding="@dimen/_12sdp"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/_18ssp"
+        android:gravity="center"
+        android:text="CART VIEW &amp; CHECKOUT"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/segoe_ui_semibold"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_above="@+id/Confirm_Order"
+        android:layout_below="@+id/cartText"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_weight="4.2"
+            android:id="@+id/rcv_checkout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_weight="5.8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/phone_number_background"
+                android:elevation="3dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/delivery_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00F0F8FF"
+                    android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:fontFamily="@font/segoe_ui"
+                    android:gravity="start"
+                    android:hint="Delivery Date"
+                    android:padding="15dp"
+                    android:textColorHint="#3B271D"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Bill Amount"
+                    android:fontFamily="@font/segoe_ui_semibold"
+                    android:textColor="#3B271D"
+                    android:textSize="18dp"
+                    android:layout_margin="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/totalbill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3B271D"
+                    android:text="1400"
+                    android:fontFamily="@font/segoe_ui_semibold"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    android:textSize="18dp"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Received"
+                    android:id="@+id/pay"
+                    android:layout_weight="70"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/segoe_ui_semibold"
+                    android:layout_margin="15dp"
+                    android:textColor="#3B271D"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:id="@+id/addAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3B271D"
+                    android:layout_weight="10"
+                    android:textSize="14dp"
+                    android:layout_toRightOf="@id/pay"
+                    android:gravity="center"
+                    android:text="Add"
+                    android:fontFamily="@font/segoe_ui_semibold"
+                    android:layout_margin="15dp"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:inputType="number"
+                    android:layout_width="0dp"
+                    android:id="@+id/amount"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="#3B271D"
+                    android:background="@drawable/payment_circle"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add Discount"
+                    android:id="@+id/discountpay"
+                    android:layout_weight="70"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/segoe_ui_semibold"
+                    android:layout_margin="15dp"
+                    android:textColor="#3B271D"
+                    android:layout_alignParentLeft="true"/>
+
+
+                <TextView
+                    android:id="@+id/addDiscountAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3B271D"
+                    android:layout_weight="10"
+                    android:textSize="14dp"
+                    android:layout_toRightOf="@id/pay"
+                    android:gravity="center"
+                    android:text="Add"
+                    android:fontFamily="@font/segoe_ui_semibold"
+                    android:layout_margin="15dp"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:maxLength="5"
+                    android:inputType="number"
+                    android:layout_width="0dp"
+                    android:id="@+id/discountamount"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="#3B271D"
+                    android:background="@drawable/payment_circle"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    android:id="@+id/balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Balance Credit"
+                    android:textColor="@color/app_color"
+                    android:textSize="18dp"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/segoe_ui_semibold"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/remainingBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_color"
+                    android:text="0"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    android:textSize="18dp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+        <Button
+            android:layout_marginVertical="@dimen/_8sdp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/Confirm_Order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Order"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:textColor="#EFE0BB"
+            android:textSize="18dp"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:background="@drawable/button_bg"/>
+    </RelativeLayout>
+</LinearLayout>

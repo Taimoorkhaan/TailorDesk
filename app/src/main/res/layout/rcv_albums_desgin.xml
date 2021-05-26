@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="@dimen/_12sdp"
+    android:padding="@dimen/_8sdp"
+    android:layout_margin="@dimen/_8sdp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/mainLayoutt"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/relLayout"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@drawable/albumshape"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/mainhook"
+            android:scaleType="fitXY"
+            android:src="@drawable/personimage"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"></ImageView>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:id="@+id/addAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_group_3792" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/_12ssp"
+        android:padding="@dimen/_4sdp"
+        android:layout_gravity="center"
+        android:text="@string/app_name"
+        android:id="@+id/albumName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+        <TextView
+
+            android:gravity="center"
+            android:background="@android:color/holo_red_light"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/_12ssp"
+            android:padding="@dimen/_4sdp"
+            android:layout_gravity="center"
+            android:text="Delete Album"
+            android:id="@+id/deleteAlbum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>

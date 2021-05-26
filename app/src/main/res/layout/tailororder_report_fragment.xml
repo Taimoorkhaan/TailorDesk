@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/total_order_shape">
+
+            <TextView
+                android:id="@+id/total_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/segui_semi_bold"
+                android:gravity="center"
+                android:text="TOTAL ORDER"
+                android:textColor="#3B271D"
+                android:textSize="@dimen/_20sdp" />
+
+            <!--            <Spinner-->
+            <!--                style="@style/Widget.AppCompat.Light.DropDownItem.Spinner"-->
+            <!--                android:layout_width="@dimen/_100sdp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:entries="@array/Order_Report"-->
+            <!--                android:layout_marginTop="@dimen/_27sdp"-->
+            <!--                android:layout_alignParentEnd="true"-->
+            <!--                android:layout_alignParentTop="true"/>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:fontFamily="@font/segui_semi_bold"
+                android:text="Today"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_27sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:src="@drawable/ic_arrow_drop_down" />
+
+            <TextView
+                android:id="@+id/total_order_received"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/total_order"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:fontFamily="@font/segui_semi_bold"
+                android:text="17"
+                android:textColor="@color/app_color3"
+                android:textSize="@dimen/_45ssp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/total_sale_shape">
+
+                <TextView
+                    android:id="@+id/total_sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_24sdp"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:fontFamily="@font/segui_semi_bold"
+                    android:text="TOTAL SALE"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <TextView
+                    android:id="@+id/iRS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_sale"
+                    android:layout_marginLeft="@dimen/_24sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/segui_semi_bold"
+                    android:gravity="bottom"
+                    android:text="Rs."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/total_sale_received"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_sale"
+                    android:layout_alignBaseline="@+id/iRS"
+                    android:layout_toRightOf="@+id/iRS"
+                    android:fontFamily="@font/segui_semi_bold"
+                    android:text="19200"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_24ssp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_14sdp"
+                android:background="@drawable/total_advace_shape">
+
+                <TextView
+                    android:id="@+id/total_advance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_24sdp"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:fontFamily="@font/segui_semi_bold"
+                    android:text="TOTAL ADVANCE"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <TextView
+                    android:id="@+id/aRS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_advance"
+                    android:layout_marginLeft="@dimen/_24sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/segui_semi_bold"
+                    android:text="Rs."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <TextView
+                    android:id="@+id/total_advance_received"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_advance"
+                    android:layout_alignBaseline="@+id/aRS"
+                    android:layout_toRightOf="@+id/aRS"
+                    android:fontFamily="@font/segui_semi_bold"
+                    android:text="19200"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_24ssp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/report_item_shape">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:fontFamily="@font/segui_semi_bold"
+                android:text="NOT ASSIGNED"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/not_assigned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_22sdp"
+                android:fontFamily="@font/segui_semi_bold"
+                android:text="05"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/report_item_shape">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:fontFamily="@font/segui_semi_bold"
+                android:text="CUTTING"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/cutting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_22sdp"
+                android:fontFamily="@font/segui_semi_bold"
+                android:text="09"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/report_item_shape">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:fontFamily="@font/segui_semi_bold"
+                android:text="STITCHING"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/stitching"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_22sdp"
+                android:fontFamily="@font/segui_semi_bold"
+                android:text="04"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/report_item_shape">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:fontFamily="@font/segui_semi_bold"
+                android:text="COMPLETED"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/completed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_22sdp"
+                android:fontFamily="@font/segui_semi_bold"
+                android:text="03"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/mProfile" android:title="Profile" android:icon="@drawable/profilem"/>
+<item android:id="@+id/mCustomerList" android:title="Customer List" android:icon="@drawable/ic_baseline_customer_24"/>
+<item android:id="@+id/mTeam" android:title="Team" android:icon="@drawable/teamm"/>
+<item android:id="@+id/mBackup" android:title="Backup" android:icon="@drawable/backupm"/>
+<item android:id="@+id/mSupport" android:title="Support" android:icon="@drawable/ic_baseline_chat_bubble_24"/>
+<item android:id="@+id/mFaq" android:title="F.A.Q" android:icon="@drawable/faqm"/>
+<item android:id="@+id/mSetting" android:title="Settings" android:icon="@drawable/ic_baseline_settings_24"/>
+<item android:id="@+id/mLogout" android:title="Logout" android:icon="@drawable/logoutm"/>
+<item android:id="@+id/myoutube"  android:icon="@drawable/youtubem"/>
+<item android:id="@+id/mfacebook"  android:icon="@drawable/facebookm"/>
+<item android:id="@+id/mInsts"  android:icon="@drawable/instagramm"/>
+<item android:id="@+id/mPin"  android:icon="@drawable/pinsetm"/>
+
+
+
+</menu>

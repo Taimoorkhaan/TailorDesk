@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="40dp"
+    android:background="#EFE0BB"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/expandable_item"
+    android:text="Item"
+    android:fontFamily="@font/segoe_ui"
+    android:padding="15dp"
+    android:background="@drawable/bg_expand"
+    android:textColor="#3B271D"
+    android:textSize="14sp"/>
+
+</LinearLayout>

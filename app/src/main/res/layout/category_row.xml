@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_margin="3dp"
+        android:background="@drawable/phone_number_background"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:elevation="5dp"
+        >
+
+        <TextView
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:id="@+id/category"
+            android:gravity="center"
+            android:background="#00F0F8FF"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:hint="Add Category" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:text="Remove"
+            />
+
+        <ImageButton
+            android:id="@+id/remove_category"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/ic_ellipse_516"
+            android:src="@drawable/ic_path_4987" />
+    </LinearLayout>
+
+</LinearLayout>

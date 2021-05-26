@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_order"
+        android:icon="@drawable/ic_order"
+        android:fontFamily="@font/segoe_ui_semibold"
+        android:title="Orders" />
+    <item
+        android:id="@+id/bottom_task"
+        android:icon="@drawable/ic_task"
+        android:fontFamily="@font/segoe_ui_semibold"
+        android:title="Tasks" />
+    <item
+        android:id="@+id/bottom_gallery"
+        android:icon="@drawable/ic_gallery"
+        android:fontFamily="@font/segoe_ui_semibold"
+        android:title="Gallery" />
+    <item
+        android:id="@+id/bottom_report"
+        android:icon="@drawable/ic_report"
+        android:fontFamily="@font/segoe_ui_semibold"
+        android:title="Report" />
+</menu>

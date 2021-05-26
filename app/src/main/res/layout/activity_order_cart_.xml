@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Activities.OrderCart_Activity">
+    <RelativeLayout
+        android:padding="@dimen/_8sdp"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color2">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="17.96dp"
+            android:layout_height="16.95dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28.89dp"
+            android:src="@drawable/ic_icon_arrow_round_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:paddingBottom="8dp"
+            android:text="Order #011020"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:textColor="#EFE0BB"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_below="@id/toolbar"
+        android:padding="@dimen/_8sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orderRcv"
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+    <TextView
+
+        android:textColor="@color/app_color"
+        android:paddingLeft="@dimen/_4sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:id="@+id/addmore"
+        android:drawablePadding="@dimen/_8sdp"
+        android:drawableRight="@drawable/plus_sign"
+        android:text="ADD ANOTHER ITEM"
+        android:fontFamily="@font/segoe_ui_semibold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <View
+        android:padding="@dimen/_8sdp"
+        android:background="@color/app_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"></View>
+
+        <TextView
+            android:visibility="gone"
+            android:textColor="@color/app_color"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:id="@+id/addmember"
+            android:drawablePadding="@dimen/_8sdp"
+            android:drawableRight="@drawable/plus_sign"
+            android:text="ADD MEMBER"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/continue_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="continue order"
+        android:textColor="#EFE0BB"
+        android:layout_margin="@dimen/_16sdp"
+        android:fontFamily="@font/segoe_ui_semibold"
+        android:textSize="18dp"
+        android:background="@drawable/button_bg"/>
+
+</RelativeLayout>

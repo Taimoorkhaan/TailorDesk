@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:elevation="@dimen/_8sdp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:background="@drawable/card_view_custom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="@dimen/_10sdp"
+                android:gravity="center"
+                android:id="@+id/btnOrderHold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Create New Album"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:textAllCaps="false"
+                android:textColor="@color/app_color2"
+                android:textColorHint="#000000"
+                android:textSize="@dimen/_18ssp"
+               />
+
+            <View
+
+                android:background="@color/app_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"></View>
+
+            <EditText
+                android:layout_margin="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:gravity="center"
+                android:id="@+id/albumName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/phone_number_background"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:hint="Album Name"
+                android:textAllCaps="false"
+                android:textColor="#3B271D"
+                android:textSize="18sp" />
+
+            <View
+
+                android:background="@color/app_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"></View>
+
+            <TextView
+                android:padding="@dimen/_10sdp"
+                android:gravity="center"
+                android:id="@+id/createAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:background="#FFFFFF"
+                android:shadowColor="#EFE0BB"
+                android:text="Create"
+                android:textAllCaps="false"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/_18ssp"
+                />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
